@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimbreKampuchea.ttf">
+            <string>TimbreKampuchea</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController">
+            <connections>
+                <outlet property="addTableView" destination="NEV-hJ-Ro2" id="WpZ-XD-jVd"/>
+                <outlet property="tableFooter" destination="Q2l-eY-Tx2" id="XdS-WH-ebd"/>
+                <outlet property="tableHeaderView" destination="agE-2p-J8M" id="OOm-F8-6pX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="NEV-hJ-Ro2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIn-a5-L9j">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.12971799000000001" green="0.58598504039999999" blue="0.78503481220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KPW-Ag-Win"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TimbreKampuchea" family="Timbre Kampuchea" pointSize="17"/>
+                    <state key="normal" title="បង្កើត">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NEV-hJ-Ro2" secondAttribute="trailing" id="5Ce-cE-GTC"/>
+                <constraint firstItem="NEV-hJ-Ro2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5Yg-n9-TKQ"/>
+                <constraint firstItem="gIn-a5-L9j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oux-QI-hNO"/>
+                <constraint firstAttribute="trailing" secondItem="gIn-a5-L9j" secondAttribute="trailing" id="X6e-9Z-0BX"/>
+                <constraint firstItem="NEV-hJ-Ro2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zmv-l6-xwz"/>
+                <constraint firstAttribute="bottom" secondItem="NEV-hJ-Ro2" secondAttribute="bottom" id="tA3-gD-fti"/>
+                <constraint firstAttribute="bottom" secondItem="gIn-a5-L9j" secondAttribute="bottom" id="y7f-Co-SDh"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="agE-2p-J8M">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSd-88-0iV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-dn-L1u">
+                    <rect key="frame" x="316" y="103" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BVJ-Yx-FJC"/>
+                        <constraint firstAttribute="width" constant="40" id="zre-6w-ZU1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eSd-88-0iV" secondAttribute="trailing" id="2BE-12-VTI"/>
+                <constraint firstAttribute="bottom" secondItem="e9c-dn-L1u" secondAttribute="bottom" constant="20" id="4Zf-G6-pry"/>
+                <constraint firstItem="eSd-88-0iV" firstAttribute="top" secondItem="agE-2p-J8M" secondAttribute="top" id="J3T-uH-2pY"/>
+                <constraint firstAttribute="bottom" secondItem="eSd-88-0iV" secondAttribute="bottom" id="ei6-8C-sEg"/>
+                <constraint firstItem="eSd-88-0iV" firstAttribute="leading" secondItem="agE-2p-J8M" secondAttribute="leading" id="mrt-gf-qmG"/>
+                <constraint firstAttribute="trailing" secondItem="e9c-dn-L1u" secondAttribute="trailing" constant="19" id="uKD-Yj-yHf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.5" y="-540.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="Q2l-eY-Tx2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jIX-Yj-m2G">
+                    <rect key="frame" x="16" y="42" width="343" height="109"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="សំគាល់" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdW-9V-kDT">
+                    <rect key="frame" x="16" y="12" width="174" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="T5g-BN-hb3"/>
+                        <constraint firstAttribute="width" constant="174" id="kSI-7Y-vHa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TimbreKampuchea" family="Timbre Kampuchea" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jIX-Yj-m2G" secondAttribute="bottom" constant="15" id="8zY-Of-uTP"/>
+                <constraint firstItem="jIX-Yj-m2G" firstAttribute="top" secondItem="Q2l-eY-Tx2" secondAttribute="top" constant="42" id="9PK-7Z-vAH"/>
+                <constraint firstItem="fdW-9V-kDT" firstAttribute="top" secondItem="Q2l-eY-Tx2" secondAttribute="top" constant="12" id="NsD-d1-cDV"/>
+                <constraint firstItem="jIX-Yj-m2G" firstAttribute="leading" secondItem="Q2l-eY-Tx2" secondAttribute="leading" constant="16" id="gbs-ag-dGg"/>
+                <constraint firstItem="fdW-9V-kDT" firstAttribute="leading" secondItem="Q2l-eY-Tx2" secondAttribute="leading" constant="16" id="kiL-rm-msE"/>
+                <constraint firstAttribute="trailing" secondItem="jIX-Yj-m2G" secondAttribute="trailing" constant="16" id="q88-sQ-e8E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="77.5" y="-846"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Camera" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimbreKampuchea.ttf">
+            <string>TimbreKampuchea</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="HistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gv-rX-igA">
+                        <rect key="frame" x="8" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="7an-S6-TLl"/>
+                            <constraint firstAttribute="width" constant="80" id="DJU-zu-7LY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-s7-yqi">
+                        <rect key="frame" x="96" y="39" width="176" height="51"/>
+                        <fontDescription key="fontDescription" name="TimbreKampuchea" family="Timbre Kampuchea" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rz3-8C-AcD">
+                        <rect key="frame" x="96" y="10" width="216" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="c7P-fN-xKm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TimbreKampuchea" family="Timbre Kampuchea" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu0-ZS-CIV">
+                        <rect key="frame" x="280" y="58" width="32" height="32"/>
+                        <state key="normal" image="Pdf"/>
+                        <connections>
+                            <action selector="pdfAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WAH-E8-0cQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rz3-8C-AcD" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="07t-Rz-fDt"/>
+                    <constraint firstAttribute="bottom" secondItem="1Rk-s7-yqi" secondAttribute="bottom" constant="10.5" id="2PO-sf-Bbf"/>
+                    <constraint firstItem="1Rk-s7-yqi" firstAttribute="leading" secondItem="4gv-rX-igA" secondAttribute="trailing" constant="8" id="61F-Va-foO"/>
+                    <constraint firstItem="4gv-rX-igA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AH9-p4-uyn"/>
+                    <constraint firstAttribute="trailing" secondItem="1Rk-s7-yqi" secondAttribute="trailing" constant="48" id="Pd3-LW-UEB"/>
+                    <constraint firstItem="Rz3-8C-AcD" firstAttribute="leading" secondItem="4gv-rX-igA" secondAttribute="trailing" constant="8" id="RmH-Ue-lAi"/>
+                    <constraint firstItem="Rz3-8C-AcD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="a1q-ga-qqQ"/>
+                    <constraint firstItem="Zu0-ZS-CIV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="buv-hf-6ax"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zu0-ZS-CIV" secondAttribute="bottom" constant="2" id="dby-GF-CaZ"/>
+                    <constraint firstItem="1Rk-s7-yqi" firstAttribute="top" secondItem="Rz3-8C-AcD" secondAttribute="bottom" constant="8" id="jo5-VY-5cY"/>
+                    <constraint firstItem="4gv-rX-igA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="rIZ-Yf-DtI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="1Rk-s7-yqi" id="f3i-zS-F8t"/>
+                <outlet property="mainImageView" destination="4gv-rX-igA" id="5dj-tO-jlA"/>
+                <outlet property="nameLabel" destination="Rz3-8C-AcD" id="uaa-3j-4gk"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="31.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Pdf" width="32" height="32"/>
+    </resources>
+</document>
